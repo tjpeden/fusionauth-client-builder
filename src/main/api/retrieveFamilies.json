@@ -1,17 +1,17 @@
 {
   "uri": "/api/user/family",
   "comments": [
-    "Retrieves all of the members of a family for a particular User by User Id."
+    "Retrieves all of the families that a user belongs to, which could be an empty list."
   ],
   "method": "get",
-  "methodName": "retrieveFamilyMembers",
+  "methodName": "retrieveFamilies",
   "successResponse": "FamilyResponse",
   "errorResponse": "Void",
   "params": [
     {
       "name": "userId",
       "comments": [
-        "The User's unique Id"
+        "The User's id"
       ],
       "type": "urlSegment",
       "javaType": "UUID"
