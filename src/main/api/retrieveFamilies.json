@@ -13,7 +13,8 @@
       "comments": [
         "The User's id"
       ],
-      "type": "urlSegment",
+      "parameterName": "userId",
+      "type": "urlParameter",
       "javaType": "UUID"
     }
   ]
