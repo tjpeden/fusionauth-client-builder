@@ -1,0 +1,20 @@
+{
+  "uri": "/api/user/family",
+  "comments": [
+    "Retrieves all of the members of a family for a particular User by User Id."
+  ],
+  "method": "get",
+  "methodName": "retrieveFamilyMembers",
+  "successResponse": "FamilyResponse",
+  "errorResponse": "Void",
+  "params": [
+    {
+      "name": "userId",
+      "comments": [
+        "The User's unique Id"
+      ],
+      "type": "urlSegment",
+      "javaType": "UUID"
+    }
+  ]
+}
