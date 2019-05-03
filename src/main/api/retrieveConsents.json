@@ -1,11 +1,11 @@
 {
-  "uri": "/api/user/family",
+  "uri": "/api/user/consent",
   "comments": [
-    "Retrieves all of the families that a user belongs to."
+    "Retrieves all of the consents that a user has."
   ],
   "method": "get",
-  "methodName": "retrieveFamilies",
-  "successResponse": "FamilyResponse",
+  "methodName": "retrieveConsents",
+  "successResponse": "UserConsentResponse",
   "errorResponse": "Void",
   "params": [
     {
