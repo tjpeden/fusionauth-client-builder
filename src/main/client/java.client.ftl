@@ -16,9 +16,8 @@
  */
 package io.fusionauth.client;
 
-import java.util.Collection;
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -79,6 +78,7 @@ import io.fusionauth.domain.api.UserCommentRequest;
 import io.fusionauth.domain.api.UserCommentResponse;
 import io.fusionauth.domain.api.UserConsentRequest;
 import io.fusionauth.domain.api.UserConsentResponse;
+import io.fusionauth.domain.api.UserConsentTypeResponse;
 import io.fusionauth.domain.api.UserDeleteRequest;
 import io.fusionauth.domain.api.UserRequest;
 import io.fusionauth.domain.api.UserResponse;
@@ -206,11 +206,14 @@ public class FusionAuthClient {
    * @deprecated ${api.deprecated}
 [/#if]
    */
-[#if api.deprecated??]
+  [#if api.deprecated??]
   @Deprecated
-[/#if]
-  public ClientResponse<${api.successResponse}, ${api.errorResponse}> ${api.methodName}(${global.methodParameters(api, "java")}) {
-    return start(${api.successResponse}.${(api.successResponse == 'Void')?then('TYPE', 'class')}, ${api.errorResponse}.${(api.errorResponse == 'Void')?then('TYPE', 'class')}).uri("${api.uri}")
+  [/#if]
+  public ClientResponse<${api.successResponse}, ${api.errorResponse}> ${api.methodName}(${global.methodParameters(api, "java")})
+
+  {
+    return start(${api.successResponse}.${(api.successResponse == 'Void')?then('TYPE', 'class')}, ${api.errorResponse}.${(api.errorResponse == 'Void')?then('TYPE', 'class')}).
+    uri("${api.uri}")
                         [#if api.authorization??]
                             .authorization(${api.authorization})
                         [/#if]
@@ -223,8 +226,8 @@ public class FusionAuthClient {
                             .bodyHandler(new JSONBodyHandler(${param.name}, objectMapper))
                           [/#if]
                         [/#list]
-                            .${api.method}()
-                            .go();
+        .${api.method}()
+      .go();
   }
 
 [/#list]
