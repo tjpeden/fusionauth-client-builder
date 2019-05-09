@@ -63,6 +63,7 @@ import io.fusionauth.domain.api.MemberRequest;
 import io.fusionauth.domain.api.MemberResponse;
 import io.fusionauth.domain.api.OAuthConfigurationResponse;
 import io.fusionauth.domain.api.PasswordValidationRulesResponse;
+import io.fusionauth.domain.api.PendingResponse;
 import io.fusionauth.domain.api.PreviewRequest;
 import io.fusionauth.domain.api.PreviewResponse;
 import io.fusionauth.domain.api.PublicKeyResponse;
@@ -212,21 +213,22 @@ public class FusionAuthClient {
   @Deprecated
 [/#if]
   public ClientResponse<${api.successResponse}, ${api.errorResponse}> ${api.methodName}(${global.methodParameters(api, "java")}) {
-    return start(${api.successResponse}.${(api.successResponse == 'Void')?then('TYPE', 'class')}, ${api.errorResponse}.${(api.errorResponse == 'Void')?then('TYPE', 'class')}).uri("${api.uri}")
-                        [#if api.authorization??]
-                            .authorization(${api.authorization})
-                        [/#if]
-                        [#list api.params![] as param]
-                          [#if param.type == "urlSegment"]
-                            .urlSegment(${(param.constant?? && param.constant)?then(param.value, param.name)})
-                          [#elseif param.type == "urlParameter"]
-                            .urlParameter("${param.parameterName}", ${(param.constant?? && param.constant)?then(param.value, param.name)})
-                          [#elseif param.type == "body"]
-                            .bodyHandler(new JSONBodyHandler(${param.name}, objectMapper))
-                          [/#if]
-                        [/#list]
-                            .${api.method}()
-                            .go();
+    return start(${api.successResponse}.${(api.successResponse == 'Void')?then('TYPE', 'class')}, ${api.errorResponse}.${(api.errorResponse == 'Void')?then('TYPE', 'class')})
+        .uri("${api.uri}")
+    [#if api.authorization??]
+        .authorization(${api.authorization})
+    [/#if]
+    [#list api.params![] as param]
+      [#if param.type == "urlSegment"]
+        .urlSegment(${(param.constant?? && param.constant)?then(param.value, param.name)})
+      [#elseif param.type == "urlParameter"]
+        .urlParameter("${param.parameterName}", ${(param.constant?? && param.constant)?then(param.value, param.name)})
+      [#elseif param.type == "body"]
+        .bodyHandler(new JSONBodyHandler(${param.name}, objectMapper))
+      [/#if]
+    [/#list]
+        .${api.method}()
+        .go();
   }
 
 [/#list]
