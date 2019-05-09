@@ -1,0 +1,28 @@
+{
+  "uri": "/api/user/consent/type",
+  "comments": [
+    "Updates the consent type with the given Id."
+  ],
+  "method": "put",
+  "methodName": "updateUserConsentType",
+  "successResponse": "UserConsentTypeResponse",
+  "errorResponse": "Errors",
+  "params": [
+    {
+      "name": "consentTypeId",
+      "comments": [
+        "The Id of the consent type to update."
+      ],
+      "type": "urlSegment",
+      "javaType": "UUID"
+    },
+    {
+      "name": "request",
+      "comments": [
+        "The request that contains all of the new user consent type information."
+      ],
+      "type": "body",
+      "javaType": "UserConsentTypeRequest"
+    }
+  ]
+}

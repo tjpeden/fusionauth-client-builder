@@ -1,17 +1,17 @@
 {
   "uri": "/api/user/consent",
   "comments": [
-    "Revokes a single consent by id."
+    "Revokes a single consent by Id."
   ],
   "method": "delete",
-  "methodName": "revokeConsent",
+  "methodName": "revokeUserConsent",
   "successResponse": "Void",
   "errorResponse": "Void",
   "params": [
     {
       "name": "consentId",
       "comments": [
-        "The Consent id"
+        "The Consent Id"
       ],
       "type": "urlSegment",
       "javaType": "UUID"

@@ -1,0 +1,20 @@
+{
+  "uri": "/api/user/consent/type",
+  "comments": [
+    "Retrieves the user consent type for the given Id."
+  ],
+  "method": "get",
+  "methodName": "retrieveUserConsentType",
+  "successResponse": "UserConsentTypeResponse",
+  "errorResponse": "Void",
+  "params": [
+    {
+      "name": "userConsentTypeId",
+      "comments": [
+        "The Id of the user consent type."
+      ],
+      "type": "urlSegment",
+      "javaType": "UUID"
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 {
   "uri": "/api/user/consent/type",
   "comments": [
-    "Retrieves all of the consent types"
+    "Retrieves all of the user consent types."
   ],
   "method": "get",
-  "methodName": "retrieveConsentTypes",
+  "methodName": "retrieveUserConsentTypes",
   "successResponse": "UserConsentTypeResponse",
   "errorResponse": "Void"
 }
