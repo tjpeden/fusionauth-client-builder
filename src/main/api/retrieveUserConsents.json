@@ -1,7 +1,7 @@
 {
   "uri": "/api/user/consent",
   "comments": [
-    "Retrieves all of the consents that a user has."
+    "Retrieves all of the consents for a User."
   ],
   "method": "get",
   "methodName": "retrieveUserConsents",
@@ -11,7 +11,7 @@
     {
       "name": "userId",
       "comments": [
-        "The User's id"
+        "The User's Id"
       ],
       "parameterName": "userId",
       "type": "urlParameter",
