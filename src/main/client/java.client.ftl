@@ -47,6 +47,8 @@ import io.fusionauth.domain.api.EmailTemplateResponse;
 import io.fusionauth.domain.api.EventLogResponse;
 import io.fusionauth.domain.api.EventLogSearchRequest;
 import io.fusionauth.domain.api.EventLogSearchResponse;
+import io.fusionauth.domain.api.FamilyEmailRequest;
+import io.fusionauth.domain.api.FamilyRequest;
 import io.fusionauth.domain.api.FamilyResponse;
 import io.fusionauth.domain.api.GroupRequest;
 import io.fusionauth.domain.api.GroupResponse;
