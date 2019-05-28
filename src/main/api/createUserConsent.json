@@ -1,17 +1,17 @@
 {
   "uri": "/api/user/consent",
   "comments": [
-    "Updates a single User consent by Id."
+    "Creates a single User consent."
   ],
-  "method": "put",
-  "methodName": "updateUserConsent",
+  "method": "post",
+  "methodName": "createUserConsent",
   "successResponse": "UserConsentResponse",
   "errorResponse": "Errors",
   "params": [
     {
       "name": "userConsentId",
       "comments": [
-        "The User Consent Id"
+        "(Optional) The Id for the User consent. If not provided a secure random UUID will be generated."
       ],
       "type": "urlSegment",
       "javaType": "UUID"
