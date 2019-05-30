@@ -60,6 +60,8 @@ import io.fusionauth.domain.api.KeyRequest;
 import io.fusionauth.domain.api.KeyResponse;
 import io.fusionauth.domain.api.LambdaRequest;
 import io.fusionauth.domain.api.LambdaResponse;
+import io.fusionauth.domain.api.LoginRecordSearchRequest;
+import io.fusionauth.domain.api.LoginRecordSearchResponse;
 import io.fusionauth.domain.api.LoginRequest;
 import io.fusionauth.domain.api.LoginResponse;
 import io.fusionauth.domain.api.MemberDeleteRequest;
