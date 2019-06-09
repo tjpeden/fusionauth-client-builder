@@ -1,5 +1,5 @@
 {
-  "uri": "/api/system/login/search",
+  "uri": "/api/system/login-record/search",
   "comments": [
     "Searches the login records with the specified criteria and pagination."
   ],
