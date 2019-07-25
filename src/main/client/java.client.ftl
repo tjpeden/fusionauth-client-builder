@@ -16,7 +16,6 @@
  */
 package io.fusionauth.client;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -77,6 +76,8 @@ import io.fusionauth.domain.api.SystemConfigurationRequest;
 import io.fusionauth.domain.api.SystemConfigurationResponse;
 import io.fusionauth.domain.api.TenantRequest;
 import io.fusionauth.domain.api.TenantResponse;
+import io.fusionauth.domain.api.ThemeRequest;
+import io.fusionauth.domain.api.ThemeResponse;
 import io.fusionauth.domain.api.TwoFactorRequest;
 import io.fusionauth.domain.api.UserActionReasonRequest;
 import io.fusionauth.domain.api.UserActionReasonResponse;
