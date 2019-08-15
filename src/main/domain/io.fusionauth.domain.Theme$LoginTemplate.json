@@ -1,13 +1,10 @@
 {
   "packageName" : "io.fusionauth.domain",
-  "type" : "LoginTheme",
-  "extends" : [ {
-    "type" : "Enableable"
-  } ],
+  "type" : "LoginTemplate",
   "implements" : [ {
     "type" : "Buildable",
     "typeArguments" : [ {
-      "type" : "LoginTheme"
+      "type" : "LoginTemplate"
     } ]
   } ],
   "fields" : {
@@ -23,10 +20,13 @@
     "helpers" : {
       "type" : "String"
     },
-    "lastModified" : {
-      "type" : "ZonedDateTime"
-    },
     "oauth2Authorize" : {
+      "type" : "String"
+    },
+    "oauth2ChildRegistrationNotAllowed" : {
+      "type" : "String"
+    },
+    "oauth2ChildRegistrationNotAllowedComplete" : {
       "type" : "String"
     },
     "oauth2CompleteRegistration" : {

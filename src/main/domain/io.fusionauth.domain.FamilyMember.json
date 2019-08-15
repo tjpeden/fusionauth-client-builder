@@ -1,0 +1,35 @@
+{
+  "packageName" : "io.fusionauth.domain",
+  "type" : "FamilyMember",
+  "description" : "/**\n * Models a single family member.\n *\n * @author Brian Pontarelli\n */\n",
+  "implements" : [ {
+    "type" : "Buildable",
+    "typeArguments" : [ {
+      "type" : "FamilyMember"
+    } ]
+  }, {
+    "type" : "_InternalJSONColumn"
+  } ],
+  "fields" : {
+    "data" : {
+      "type" : "Map",
+      "typeArguments" : [ {
+        "type" : "String"
+      }, {
+        "type" : "Object"
+      } ]
+    },
+    "insertInstant" : {
+      "type" : "ZonedDateTime"
+    },
+    "owner" : {
+      "type" : "boolean"
+    },
+    "role" : {
+      "type" : "FamilyRole"
+    },
+    "userId" : {
+      "type" : "UUID"
+    }
+  }
+}

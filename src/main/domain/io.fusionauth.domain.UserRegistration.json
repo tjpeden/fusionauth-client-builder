@@ -33,9 +33,6 @@
         "type" : "String"
       } ]
     },
-    "application" : {
-      "type" : "Application"
-    },
     "applicationId" : {
       "type" : "UUID"
     },
@@ -61,10 +58,7 @@
       } ]
     },
     "timezone" : {
-      "type" : "String"
-    },
-    "userId" : {
-      "type" : "UUID"
+      "type" : "ZoneId"
     },
     "username" : {
       "type" : "String"
