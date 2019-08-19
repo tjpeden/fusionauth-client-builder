@@ -25,6 +25,9 @@
     "insertInstant" : {
       "type" : "ZonedDateTime"
     },
+    "isDefault" : {
+      "type" : "boolean"
+    },
     "lastUpdateInstant" : {
       "type" : "ZonedDateTime"
     },
