@@ -12,8 +12,14 @@
     "authorizationGrantIdTimeToLiveInSeconds" : {
       "type" : "int"
     },
+    "changePasswordIdGenerator" : {
+      "type" : "SecureGeneratorConfiguration"
+    },
     "changePasswordIdTimeToLiveInSeconds" : {
       "type" : "int"
+    },
+    "emailVerificationIdGenerator" : {
+      "type" : "SecureGeneratorConfiguration"
     },
     "emailVerificationIdTimeToLiveInSeconds" : {
       "type" : "int"
@@ -24,8 +30,14 @@
     "passwordlessLoginTimeToLiveInSeconds" : {
       "type" : "int"
     },
+    "registrationVerificationIdGenerator" : {
+      "type" : "SecureGeneratorConfiguration"
+    },
     "registrationVerificationIdTimeToLiveInSeconds" : {
       "type" : "int"
+    },
+    "setupPasswordIdGenerator" : {
+      "type" : "SecureGeneratorConfiguration"
     },
     "setupPasswordIdTimeToLiveInSeconds" : {
       "type" : "int"

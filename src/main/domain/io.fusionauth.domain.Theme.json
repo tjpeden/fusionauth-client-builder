@@ -31,14 +31,14 @@
     "lastUpdateInstant" : {
       "type" : "ZonedDateTime"
     },
-    "templates" : {
-      "type" : "Templates"
-    },
     "name" : {
       "type" : "String"
     },
     "stylesheet" : {
       "type" : "String"
+    },
+    "templates" : {
+      "type" : "Templates"
     }
   }
 }

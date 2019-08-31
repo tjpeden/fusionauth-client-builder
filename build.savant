@@ -52,6 +52,7 @@ target(name: "generateDomain", description: "Generates all of the json files for
    "io.fusionauth.domain.Integration.json",
    "io.fusionauth.domain.internal._InternalJSONColumn.json",
    "io.fusionauth.domain.internal.annotation.InternalJSONColumn.json",
+   "io.fusionauth.domain.internal.annotation.ExcludeFromDatabaseDataColumn.json",
    "io.fusionauth.domain.internal.DatabaseObjectMapperHolder.json",
    "io.fusionauth.domain.internal.ReflectionTools.json",
    "io.fusionauth.jwt.domain.Buildable.json",
