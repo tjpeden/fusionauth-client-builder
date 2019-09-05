@@ -27,6 +27,9 @@
     "oneTimePasswordTimeToLiveInSeconds" : {
       "type" : "int"
     },
+    "passwordlessLoginGenerator" : {
+      "type" : "SecureGeneratorConfiguration"
+    },
     "passwordlessLoginTimeToLiveInSeconds" : {
       "type" : "int"
     },
